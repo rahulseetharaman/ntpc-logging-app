@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Power Plant</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron"><h1>ENTER YOUR PARAMETERS</h1></div>
+        <div class="container">
+            <form>
+                <table style="margin-top: 10px;">
+                    <tr>
+                        <th>Date</th>
+                        <th>Shift</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="DATE" required></td>
+                        <td><input type="text" name="SHIFT" required></td>
+                    </tr>
+                </table>
+                   
+                <table style="margin-top:10px;">        
+                    <tr>
+                        <td><strong><h4>
+                            Major Issues
+                        </h4></strong></td>
+                    </tr>
+                    <tr>
+                        <th>Unit 1</th>
+                        <th>Unit 2</th>
+                        <th>Unit 3</th>
+                        <th>Unit 4</th>
+                        <th>Unit 5</th>
+                        <th>Unit 6</th>
+                        <th>Unit 7</th>
+                    </tr>
+                    <tr>
+                        <td><textarea name="MAJOR ISSUES UNIT 1" required></textarea></td>
+                        <td><textarea name="MAJOR ISSUES UNIT 2" required></textarea></td>
+                        <td><textarea name="MAJOR ISSUES UNIT 3" required></textarea></td>
+                        <td><textarea name="MAJOR ISSUES UNIT 4" required></textarea></td>
+                        <td><textarea name="MAJOR ISSUES UNIT 5" required></textarea></td>
+                        <td><textarea name="MAJOR ISSUES UNIT 6" required></textarea></td>
+                        <td><textarea name="MAJOR ISSUES UNIT 7" required></textarea></td>
+                    </tr>
+                </table>
+
+                <table style="margin-top:10px;">
+                    <tr>
+                        <td>
+                            <strong>Stage 1&2 DC</strong>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>D</th>
+                        <th>M</th>
+                        <th>Y</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" name="Stage 1&2 DC/D"></td>
+                        <td><input type="text" name="Stage 1&2 DC/M"></td>
+                        <td><input type="text" name="Stage 1&2 DC/Y"></td>
+                    </tr>
+
+                </table>
+
+
+                <table style="margin-top:10px;">
+                    <tr>
+                        <td>
+                            <strong>Stage 1&2 SG</strong>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>D</th>
+                        <th>M</th>
+                        <th>Y</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" name="Stage 1&2 SG/D"></td>
+                        <td><input type="text" name="Stage 1&2 SG/M"></td>
+                        <td><input type="text" name="Stage 1&2 SG/Y"></td>
+                    </tr>
+
+                </table>
+
+
+
+                <table style="margin-top:10px;">
+                    <tr>
+                        <td>
+                            <strong>Stage 3 DC</strong>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>D</th>
+                        <th>M</th>
+                        <th>Y</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" name="Stage 3 DC/D"></td>
+                        <td><input type="text" name="Stage 3 DC/M"></td>
+                        <td><input type="text" name="Stage 3 DC/Y"></td>
+                    </tr>
+
+                </table>
+
+
+                <table style="margin-top:10px;">
+                    <tr>
+                        <td>
+                            <strong>Stage 3 SG</strong>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>D</th>
+                        <th>M</th>
+                        <th>Y</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" name="Stage 3 SG/D"></td>
+                        <td><input type="text" name="Stage 3 SG/M"></td>
+                        <td><input type="text" name="Stage 3 SG/Y"></td>
+                    </tr>
+
+                </table>
+
+                <table style="margin-top:10px;">
+                    <tr>
+                        <th>Day Gen</th>
+                        <th>Day PLF</th>
+                        <th>Monthly PLF</th>
+                        <th>Yearly PLF</th>
+                        <th>APC</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Day Gen"></td>
+                        <td><input type="text" name="Day PLF"></td>
+                        <td><input type="text" name="Monthly PLF"></td>
+                        <td><input type="text" name="Yearly PLF"></td>
+                        <td><input type="text" name="APC"></td>
+                    </tr>
+                </table>
+
+
+                <table style='margin-top:10px;'>
+                
+                    <tr>
+                        <td><strong><h4>
+                            Coal-MT
+                        </h4></strong></td>
+                    </tr>
+                    <tr>
+                        <th>Receipt</th>
+                        <th>Cons</th>
+                        <th>Stock</th>
+                    </tr>
+                    <tr>
+                        
+                        <td><input type="text" name="RECEIPT" required></td>
+                        <td><input type="text" name="CONS" required></td>
+                        <td><input type="text" name="STOCK" required></td>
+                    </tr>
+
+                </table>
+
+
+                <table style='margin-top:10px;'>
+                    <tr>
+                        <td><strong><h4>
+                            1% Ramp Rate Status
+                        </h4></strong></td>
+                    </tr>
+                    <tr>
+                        <th>Stage 1&2</th>
+                        <th>Stage 3</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="RAMP RATE STAGE 1&2" required></td>
+                        <td><input type="text" name="RAMP RATE STAGE 3" required></td>
+                    </tr>
+                </table>
+                    
+
+                <table style="margin-top: 10px;">
+                    <tr>
+                        <td><strong><h4>
+                            Stage 1 Offsites
+                        </h4></strong></td>
+                    </tr>
+                    <tr>
+                        <th>Ash Series</th>
+                        <th>ATs</th>
+                        <th>Ash Trucks</th>
+                        <th>Silo Levels</th>
+                        <th>St 1 RW Level</th>
+                        <th>St 2 CW sump level</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="ASH SERIES" required></td>
+                        <td><input type="text" name="ATs" required></td>
+                        <td><input type="text" name="ASH TRUCKS" required></td>
+                        <td><input type="text" name="Stage 1 Silo Levels" required></td>
+                        <td><input type="text" name="St 1 RW Level" required></td>
+                        <td><input type="text" name="St2 CW sump level" required></td>
+                    </tr>
+                
+                </table>
+                    <table style="margin-top: 10px;">
+                        <tr>
+                            <td><strong><h4>
+                                Stage 2 Offsites
+                            </h4></strong></td>
+                        </tr>
+                        <tr>
+                            <th>Dry ash sys I/S</th>
+                            <th>Ash Lines not avl</th>
+                            <th>Vessels NA</th>
+                            <th>Silo levels</th>
+                            <th>BAS</th>
+                            <th>FAS</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Dry ash sys I/S" required></td>
+                            <td><input type="text" name="Ash Lines not avl" required></td>
+                            <td><input type="text" name="Vessels NA" required></td>
+                            <td><input type="text" name="Silo levels" required></td>
+                            <td><input type="text" name="BAS" required></td>
+                            <td><input type="text" name="FAS" required></td>
+                        </tr>
+                    </table>
+
+
+                    <table style="margin-top: 10px;">
+                        <tr>
+                            <td><strong><h4>
+                                Stage 3 Offsites
+                            </h4></strong></td>
+                        </tr>
+                        <tr>
+                            <th>ESP Passes Dry</th>
+                            <th>ESP Passes Wet</th>
+                            <th>Series Avl</th>
+                            <th>Series Not Avl</th>
+                            <th>Ash Trucks</th>
+                            <th>Silo Levels</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="ESP Passes Dry" required></td>
+                            <td><input type="text" name="ESP Passes Wet" required></td>
+                            <td><input type="text" name="Series Avl" required></td>
+                            <td><input type="text" name="Series Not Avl" required></td>
+                            <td><input type="text" name="Ash Trucks" required></td>
+                            <td><input type="text" name="Stage 3 Silo Levels" required></td>
+                        </tr>
+                    </table>
+    
+
+                    <table style="margin-top: 10px;">
+                        <tr>
+                            <th>SCE NAME</th>
+                            <th>SCE Group</th>
+                        </tr>
+    
+                        <tr>
+                            <td><input type="text" name="SCE NAME" required></td>
+                            <td><input type="text" name="SCE GROUP" required></td>
+                        </tr>                    
+                    </table>
+
+                <div class="row" style="margin-top: 10px;">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            
+            </form>
+        </div>
+        <script>
+            const electron = require('electron');
+            const {ipcRenderer} = electron;
+            // var textareas=document.getElementsByTagName("textarea");
+            //     for(i=0;i<textareas.length;i++)
+            //     textareas[i].value="ss";
+
+            //     var inputs=document.getElementsByTagName("input");
+            //     for(i=0;i<inputs.length;i++)
+            //     inputs[i].value="ss";
+
+            var formElem=document.forms[0];
+            formElem.addEventListener('submit',(event)=>{
+                event.preventDefault();
+                console.log("submit triggered")
+                const formData = new FormData(formElem)
+                var response={}
+                for (var pair of formData.entries()) {
+                    response[pair[0]]=pair[1];
+                }
+                ipcRenderer.send("submit:data",response);
+            })
+        </script>
+    </body>
+</html>

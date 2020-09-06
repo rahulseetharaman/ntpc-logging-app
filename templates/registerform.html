@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Power Plant</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="row" style="margin:20px;">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+            <form>
+            
+                <div class="form-group">
+                    <label for="empid">EMPLOYEE ID</label>
+                    <input type="text" name="empid" id="empid" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE</label>
+                    <input type="text" name="phone" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm" id="confirm" class="form-control" required>
+                </div>
+                <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        
+        <script>
+            const electron = require('electron');
+            const {ipcRenderer} = electron;
+            var formElem=document.forms[0];
+            formElem.addEventListener('submit',(event)=>{
+                event.preventDefault();
+                const formData = new FormData(formElem)
+                var response={}
+                for (var pair of formData.entries()) {
+                    response[pair[0]]=pair[1];
+                }
+                ipcRenderer.send("submit:register",response);
+            })
+        
+
+        </script>
+    </body>
+</html>

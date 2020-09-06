@@ -1,0 +1,29 @@
+{
+  "name": "powerplant",
+  "version": "1.0.0",
+  "description": "A powerplant web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.1.2",
+    "electron-log": "^4.2.2",
+    "firebase": "^7.17.2",
+    "html-to-text": "^5.1.1",
+    "messagebird": "^3.5.0",
+    "msg91": "0.0.6",
+    "node-telegram-bot-api": "^0.50.0",
+    "sendotp": "^1.2.9",
+    "speakeasy": "^2.0.0",
+    "springedge": "^1.0.5",
+    "twilio": "^3.48.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.0.0",
+    "electron-winstaller": "^4.0.1"
+  }
+}
