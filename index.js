@@ -12,14 +12,14 @@ const bot = new TelegramBot(token, {polling: true});
 var firebase = require('firebase');
 const { DataSessionPage } = require('twilio/lib/rest/wireless/v1/sim/dataSession');
 var firebaseConfig = {
-    apiKey: "AIzaSyB6wKbRZrAK6bxYqNKi8_lrjVOeqsz3tkg",
-    authDomain: "savvy-pagoda-234618.firebaseapp.com",
-    databaseURL: "https://savvy-pagoda-234618.firebaseio.com",
-    projectId: "savvy-pagoda-234618",
-    storageBucket: "savvy-pagoda-234618.appspot.com",
-    messagingSenderId: "820244590979",
-    appId: "1:820244590979:web:d9e0d515837b3e7f7a06b6",
-    measurementId: "G-RCS5XSG2YK"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
