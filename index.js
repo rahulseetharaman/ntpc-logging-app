@@ -5,7 +5,7 @@ const {app,BrowserWindow,ipcMain} = electron;
 
 // replace the value below with the Telegram token you receive from @BotFather
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1223684247:AAF2-iM3daBaZut86Q0CRBKwU5Dgx9EVH9Y';
+const token = '';
 const bot = new TelegramBot(token, {polling: true});
 
 //  ------------- FIREBASE IMPORT AND INITIALIZE ----------------------
